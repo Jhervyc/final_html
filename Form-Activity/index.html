@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="enrollment-form">
+        <h1>Student Enrollment Form</h1>
+        <form>
+            <!-- form for name -->
+            <div class="name-div">
+                <label for="name" class="bold">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your Name" required><br>
+            </div>
+            
+            <!-- form for email -->
+            <div class="email-div">
+                <label for="email" class="bold">Email Address</label><br>
+                <input type="email" id="email" name="password" placeholder="Enter you Email Address" required><br>
+            </div>
+
+            <!-- form for gender -->
+            <div class="gender-div">
+                <p>Gender:</p>
+                <div class="gender">
+                    <input type="radio" name="gender" id="male" required>
+                    <label for="male">Male</label><br>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" name="gender" id="not">
+                <label for="not">Other</label>
+                </div>
+            </div>
+            
+            <!-- form for course -->
+            <div class="course-div">
+                <p>Course/s Intended:</p>
+                <div class="course">
+                    <input type="checkbox" id="html" name="course[]" >
+                    <label for="html">HTML</label><br>
+                    <input type="checkbox" id="java" name="course[]" >
+                    <label for="java">Java</label><br>
+                    <input type="checkbox" id="css" name="course[]" >
+                    <label for="css">CSS</label><br>
+                    <input type="checkbox" name="course[]" id="javascript" >
+                <label for="javascript">JavaScript</label><br>
+                </div>
+            </div>
+
+            <!-- submit button -->
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
