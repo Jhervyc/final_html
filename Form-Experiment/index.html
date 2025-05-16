@@ -8,48 +8,64 @@
 </head>
 <body>
     <div class="enrollment-form">
-        <h1>Student Enrollment Form</h1>
-            <form>
+        <form>
+            <h1>Student Enrollment Form</h1>
             <!-- fieldset for student -->
             <fieldset class="student">
                 <legend>Student Information</legend>
                 <!-- form for name -->
                 <div class="name-div">
                     <label for="name">Student Name:</label>
-                    <input type="text" name="name" id="fname" placeholder="First Name" required>
-                    <input type="text" name="name" id="lname" placeholder="Last Name" required>
-                </div>
-                <!-- form for birth date -->
-                <div class="birthdate-div">
-                    <label for="birth">Birth Date:</label>
-                    <input type="date" required>
-                </div>
-                <!-- form for gender -->
-                <div class="gender-div">
-                    <p>Gender:</p>
-                    <div class="gender-radio-div">
-                        <input type="radio" name="gender" id="male" required>
-                        <label for="male">Male</label>
-                        <input type="radio" name="gender" id="female">
-                        <label for="female">Female</label>
-                        <input type="radio" name="gender" id="other">
-                        <label for="other">Other</label>
+                    <div class="name-2div">
+                        <input type="text" name="name" id="fname" placeholder="First Name" required>
+                        <input type="text" name="name" id="lname" placeholder="Last Name" required>
                     </div>
                 </div>
+                <!-- TESTINGGGGGGGGGGGGGGGGGGGGGGGG -->
+                <div class="div-2">
+                    <!-- form for birth date -->
+                    <div class="birthdate-div">
+                        <label for="birth">Birth Date:</label>
+                        <input type="date" required>
+                    </div>
+                    <!-- form for gender -->
+                    <div class="gender-div">
+                        <p>Gender:</p>
+                        <div class="gender-radio-div">
+                            <div>
+                                <input type="radio" name="gender" id="male" required>
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="other">
+                            <label for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TESTINGGGGGGGGGGGGGGGGGGGGGGGG -->
+                 
                 <!-- form for address -->
                 <div class="address-div">
                     <label for="address">Student Address:</label>
                     <input type="text" name="address" id="address" placeholder="Full Address" required>
                 </div>
-                <!-- form for contact number -->
-                <div class="contact-div">
-                    <label for="contact">Contact Number:</label><br>
-                    <input type="tel" name="contact" id="contact" pattern="[0-9]{11}" placeholder="ex. 09123456789" required>
-                </div>
-                <!-- form for email -->
-                <div class="email-div">
-                    <label for="email">Email Address:</label><br>
-                    <input type="email" name="email" id="email" placeholder="name@email.com" required>
+                
+                <div class="div-2">
+                    <!-- form for contact number -->
+                    <div class="contact-div">
+                        <label for="contact">Contact Number:</label><br>
+                        <input type="tel" name="contact" id="contact" pattern="[0-9]{11}" placeholder="ex. 09123456789" required>
+                    </div>
+                    <!-- form for email -->
+                    <div class="email-div">
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" name="email" id="email" placeholder="name@email.com" required>
+                    </div>
                 </div>
             </fieldset>
 
@@ -61,43 +77,61 @@
                     <label for="pgname">Parent/Guradian Name:</label>
                     <input type="text" name="pgname" id="pgname" placeholder="Full Name" required>
                 </div>
-                <!-- form for relationship to student -->
-                <div class="relation-div">
-                    <label for="relation">Relationship to Student:</label>
-                    <select name="relation" id="relation">
-                        <option value="father">Father</option>
-                        <option value="mother">Mother</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <!-- for for pg contact number -->
-                <div class="pgcontact-div">
-                    <label for="pgcontact">Contact Number:</label><br>
-                    <input type="tel" name="pgcontact" id="pgcontact" pattern="[0-9]{11}" placeholder="ex. 09123456789" required>
-                </div>
-                <!-- form for pg email -->
-                <div class="pgemail-div">
-                    <label for="pgemail">Email Address:</label><br>
-                    <input type="email" name="pgemail" id="pgemail" placeholder="name@email.com" required>
+                <div class="div-3">
+                     <!-- form for relationship to student -->
+                    <div class="relation-div">
+                        <label for="relation">Relationship to Student:</label>
+                        <select name="relation" id="relation">
+                            <option value="father">Father</option>
+                            <option value="mother">Mother</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <!-- for for pg contact number -->
+                    <div class="pgcontact-div">
+                        <label for="pgcontact">Contact Number:</label><br>
+                        <input type="tel" name="pgcontact" id="pgcontact" pattern="[0-9]{11}" placeholder="ex. 09123456789" required>
+                    </div>
+                    <!-- form for pg email -->
+                    <div class="pgemail-div">
+                        <label for="pgemail">Email Address:</label><br>
+                        <input type="email" name="pgemail" id="pgemail" placeholder="name@email.com" required>
+                    </div>
                 </div>
             </fieldset>
 
             <!-- fieldset for Academic -->
             <fieldset class="academic">
                 <legend>Academic Information</legend>
-                <p>Course/s to Take:</p>
-                <input type="checkbox" name="course[]" id="html" value="html">
-                <label for="html">HTML</label><br>
-                <input type="checkbox" name="course[]" id="css" value="css">
-                <label for="css">CSS</label><br>
-                <input type="checkbox" name="course[]" id="javascript" value="javascript">
-                <label for="javascript">Javascript</label><br>
-                <input type="checkbox" name="course[]" id="java" value="java">
-                <label for="java">Java</label><br>
+                <div class="course-div">
+                    <div class="course-p">
+                        <p>Course/s to Take:</p>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="course[]" id="html" value="html">
+                        <label for="html">HTML</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="course[]" id="css" value="css">
+                        <label for="css">CSS</label><br>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="course[]" id="javascript" value="javascript">
+                        <label for="javascript">Javascript</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="course[]" id="java" value="java">
+                        <label for="java">Java</label><br>
+                    </div>
+                    
+                </div>
             </fieldset>
             <input type="submit" value="Submit" id="submit">
         </form>
     </div>
-   
 </body>
 </html>

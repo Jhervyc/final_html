@@ -1,119 +1,225 @@
 body {
-    background: linear-gradient(to right, rgb(20, 255, 243), rgb(163, 24, 255));
+    background: linear-gradient(to right, rgb(56, 136, 255), rgb(255, 28, 255));
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Overall */
+.enrollment-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.enrollment-form{
+    align-items: center;
     background-color: white;
-    margin: 0px, 30px;
+    border-radius: 10px;
     padding: 40px;
-    width: 90%;
-    max-width: 500px;
-    border-radius: 20px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 0 15px rgb(105, 97, 97);
 }
 
 .enrollment-form h1 {
-    color: rgb(47, 47, 182);
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 25px;
-    display: flex;
+    color: blue;
+    font-size: 2rem;
 }
 
-.student, .parent, .academic {
-    margin-bottom: 20px;
-    border: 1px solid black;
-    border-radius: 10px;
+.enrollment-form form {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.enrollment-form form fieldset div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.enrollment-form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 1px black solid;
+    width: 90%;
 }
 
 .enrollment-form legend {
-    color: rgb(47, 47, 182);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    padding: 0 1%;
     font-weight: bold;
-    padding: 0px 5px;
+    color: rgb(52, 52, 204);
 }
 
-.student {
-    
-}
-.name-div label{
-    font-weight: bold;
-    font-size: .85rem;
-    margin-right: 20px;
-}
-
-.name-div input, .birthdate-div input , .address-div input{
-    height: 25px;
-    font-size: .8rem;
-    width: 100%;
-    max-width: 150px;
-}
-
-#fname {
-    margin-right: 20px;
-}
-
-.name-div {
-    display: flex;
-    align-items: center;
+/* Student fieldset */
+.name-div{
     height: 40px;
+    width: 100%;
+}
+
+.name-2div {
+    justify-content: space-between;
+    font-size: .8rem;
+    width: 75%;
+}
+
+.name-2div input {
+    height: 25px;
+    width: 46%;
+}
+
+.name-div label {
+    font-size: .85rem;
+    font-weight: bold;
+    width: 25%;
+}
+
+
+.birthdate-div {
+    width: 64%;
 }
 
 .birthdate-div label {
-    font-weight: bold;
     font-size: .85rem;
-    margin-right: 10px;
+    font-weight: bold;
+    width: 39%;
 }
 
-.birthdate-div {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    align-items: center;
+.birthdate-div input {
+    width: 55.3%;
+    height: 29px;
+}
+
+
+.gender-div {
+    width: 36%;
 }
 
 .gender-div p {
-    display: flex;
-    flex-direction: row;
     font-size: .85rem;
     font-weight: bold;
-}
-
-.gender-radio-div {
-    font-size: .75rem;
-}
-
-.gender-div {
-    display: flex;
-    border: 1px red solid;
-    width: 39%;
-    align-items: center;
-}
-
-
-.address-div {
-    display: flex;
+    margin: 5px;
     width: 100%;
-    border: 1px red solid;
+}
+
+.gender-div label {
+    font-size: .8rem;
+}
+
+.address-div{
+    width: 100%;
+}
+
+.address-div label {
+    font-size: .85rem;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.address-div input {
+    width: 100%;
+    height: 25px;
+}
+
+.contact-div, .email-div {
+    width: 48%;
+}
+
+.contact-div label, .email-div label {
+    font-size: .85rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.contact-div input, .email-div input {
+    width: 100%;
+    height: 25px;
+}
+
+.div-2{
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+/* Parent Fieldset */
+.parent label {
+    font-size: .85rem;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.parent input{
+    width: 100%;
+    height: 25px;
+}
+
+.parent select {
+    width: 100%;
+    height: 30px;
+}
+
+.pgname-div {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.pgname-div label {
+    width: 100%;
+}
+
+.div-3 {
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.relation-div {
+    width: 32%;
+}
+
+.pgcontact-div {
+    width: 32%;
+}
+
+.pgemail-div {
+    width: 32%;
+}
+/* Academic Fieldset */
+
+.course-div{
+    width: 100%;
+}
+.course-div div{
+    width: 50%;
+    font-size: .8rem;
+}
+.course-p {
+    width: 100% !important; 
+}
+
+.course-div p {
+    font-size: .85rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 #submit {
-    border: 0;
-    display: flex;
-    background-color: rgb(0, 0, 255);
-    color: white;
-    font-weight: bold;
-    width: 100%;
+    font-size: 1rem;
+    width: 95%;
     height: 40px;
-    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    border: 0;
     border-radius: 5px;
+    cursor: pointer;
+    margin: 35px 0;
 }
 
-#submit:hover {
-    background-color: rgb(0, 0, 190);
-}
+
