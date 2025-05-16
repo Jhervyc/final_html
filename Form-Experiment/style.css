@@ -191,22 +191,22 @@ body {
 }
 /* Academic Fieldset */
 
-.course-div{
+.course-div {
+    gap: 10px;
+}
+
+.course-div div {
     width: 100%;
-}
-.course-div div{
-    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: .8rem;
-}
-.course-p {
-    width: 100% !important; 
 }
 
 .course-div p {
     font-size: .85rem;
     font-weight: bold;
     margin: 0;
-    margin-bottom: 5px;
 }
 
 #submit {
@@ -218,8 +218,43 @@ body {
     background-color: blue;
     border: 0;
     border-radius: 5px;
-    cursor: pointer;
     margin: 35px 0;
 }
 
+#submit:hover {
+    cursor: pointer;
+    background-color: rgb(2, 2, 190);
+    
+}
 
+/* testing */
+@media (max-width: 600px) {
+  .div-2, .div-3 {
+    flex-direction: column;
+  }
+
+  .contact-div, .email-div, .relation-div, .pgcontact-div, .pgemail-div {
+    width: 100%;
+  }
+}
+/* additional */
+
+input, select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+.course-div label:hover{
+    cursor: pointer;
+}
+
+.course-div input:hover {
+    cursor: pointer;
+}

@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="enrollment-form">
-        <form>
+        <form action="#" method="get">
             <h1>Student Enrollment Form</h1>
             <!-- fieldset for student -->
             <fieldset class="student">
@@ -17,16 +17,15 @@
                 <div class="name-div">
                     <label for="name">Student Name:</label>
                     <div class="name-2div">
-                        <input type="text" name="name" id="fname" placeholder="First Name" required>
-                        <input type="text" name="name" id="lname" placeholder="Last Name" required>
+                        <input type="text" name="fname" id="name" placeholder="First Name" required>
+                        <input type="text" name="lname" id="name" placeholder="Last Name" required>
                     </div>
                 </div>
-                <!-- TESTINGGGGGGGGGGGGGGGGGGGGGGGG -->
                 <div class="div-2">
                     <!-- form for birth date -->
                     <div class="birthdate-div">
                         <label for="birth">Birth Date:</label>
-                        <input type="date" required>
+                        <input type="date" id="birth" required>
                     </div>
                     <!-- form for gender -->
                     <div class="gender-div">
@@ -47,7 +46,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- TESTINGGGGGGGGGGGGGGGGGGGGGGGG -->
                  
                 <!-- form for address -->
                 <div class="address-div">
@@ -71,7 +69,7 @@
 
             <!-- field set for parent -->
             <fieldset class="parent">
-                <legend>Parent/Guradian Information</legend>
+                <legend>Parent/Guardian Information</legend>
                 <!-- form for parent/guardian name -->
                 <div class="pgname-div">
                     <label for="pgname">Parent/Guradian Name:</label>
